@@ -1,0 +1,120 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid var(--brown-800);
+  margin: 1em 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Stone-100);
+}
+.content {
+  width: 700px;
+  background: var(--White);
+  margin-top: 45px;
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content__image {
+  width: 95%;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content__image--img {
+  width: 100%;
+}
+
+.content__info {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.content__info--header {
+  font-family: "Young Serif", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--Stone-600);
+}
+.content__info--description {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--Stone-600);
+  margin-bottom: 10px;
+  padding: 10px 0 40px;
+}
+
+.content__info--list {
+  padding: 10px 0 0 20px;
+  margin-bottom: 35px;
+}
+.content__info--list .info__list--header {
+  font-weight: 500;
+}
+.info__list--header {
+  font-family: "Young Serif", serif;
+  font-size: 28px;
+  color: var(--brown-800);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.info__list {
+  color: var(--Stone-900);
+  padding-block: 6px;
+  font-size: 16px;
+}
+.info__list span {
+  font-weight: 600;
+}
+.box__list {
+  background-color: var(--rose-50);
+}
+.content__info .box__list .info__list--header {
+  margin-left: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 400;
+}
+.box__list .info__list {
+  margin-left: 23px;
+}
+.content__footer--description {
+  font-size: 16px;
+  padding: 15px 0;
+}
+.footer__table {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.footer__table--text {
+  flex: 1;
+}
+.footer__table--number {
+  text-align: right;
+}
